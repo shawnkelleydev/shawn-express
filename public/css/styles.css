@@ -1,0 +1,215 @@
+html {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+
+:root {
+  font-family: "Sora", sans-serif;
+  --ham-width: 80px;
+  --ham-thick: 7px;
+  --footer-height: 90px;
+  --header-height: 90px;
+}
+
+/*---------
+
+    DRY
+
+----------*/
+
+body,
+#wrapper,
+ul,
+li,
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+#ham,
+#content li,
+#footer li {
+  align-items: center;
+}
+
+#ham,
+#logo-parent {
+  justify-content: center;
+}
+
+#footer {
+  flex-direction: column-reverse;
+}
+
+header {
+  display: grid;
+}
+
+/* z {
+  display: block;
+} */
+
+#menu {
+  display: none;
+}
+
+/*---------
+
+    TAGS
+
+----------*/
+
+/* problem-preventers */
+
+body {
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.875em;
+  text-align: center;
+}
+
+p {
+  font-size: 0.875em;
+}
+
+ul {
+  list-style: none;
+}
+
+/*-------------------*/
+
+header {
+  grid-template-columns: auto calc(var(--ham-width) + 20px);
+  position: fixed;
+  bottom: 0;
+  height: var(--header-height);
+  box-shadow: 0 0 10px gray;
+}
+
+footer {
+}
+
+a {
+}
+
+/*---------
+
+  CLASSES
+
+----------*/
+
+.menu-item {
+}
+
+.menu-txt {
+}
+
+.sub-menu {
+}
+
+.sub-menu-item {
+}
+
+.sub-menu-txt {
+}
+
+/*---------
+
+    IDs
+
+----------*/
+
+#wrapper {
+}
+
+#menu {
+}
+
+#logo-parent {
+  grid-column: 1/2;
+  justify-content: center;
+}
+
+#ham {
+  grid-column: 2/3;
+  width: var(--ham-width);
+  justify-self: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+#ham li {
+  width: 100%;
+  height: var(--ham-thick);
+  background-color: black;
+}
+
+#ham li:nth-child(-n + 2) {
+  margin-bottom: var(--ham-thick);
+}
+
+#headspace {
+  height: var(--header-height);
+}
+
+#headshot {
+  border-radius: 50%;
+  margin: 20px 0;
+  width: 90vw;
+  box-shadow: 0 0 10px gray;
+}
+
+#logo h2 {
+  text-align: left;
+  padding-left: 20px;
+}
+
+#content {
+  min-height: calc(100vh - var(--header-height));
+}
+
+#content-col-1 {
+}
+
+#content h1 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+/*---------
+
+    HOV
+
+----------*/
+
+/*---------
+
+  ≥IPAD
+
+----------*/
+
+/*------------
+
+  DARK/LIGHT
+
+------------*/

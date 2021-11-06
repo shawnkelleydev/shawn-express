@@ -1,0 +1,30 @@
+{
+  "name": "shawn-kelley-express-portfolio",
+  "version": "1.0.0",
+  "description": "express portfolio site",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "shawn",
+    "kelley",
+    "developer",
+    "music",
+    "composer",
+    "tuba",
+    "urban suite",
+    "javascript",
+    "html",
+    "css",
+    "nodejs",
+    "express"
+  ],
+  "author": "shawn kelley",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.14",
+    "pug": "^3.0.2"
+  }
+}
