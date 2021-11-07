@@ -1,0 +1,50 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Shawn Kelley | Developer | Musician
+  // css
+  link(rel='stylesheet' type="text/css" href='/static/css/normalize.css')
+  link(rel='stylesheet' type="text/css" href='/static/css/styles.css')
+  // google fonts
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap' rel='stylesheet')
+#wrapper
+  header
+    // --logo--
+    ul#logo-parent
+      a(href="/")
+        li
+          h2.logo // shawn kelley
+    // ham
+    ul#ham
+      li
+      li
+      li
+    // --menu--
+    ul#menu
+      // --dev--
+      li#menu-dev.menu-li
+        a.nav(href="/projects") //projects
+
+          
+      // --ab--
+      li#menu-ab.menu-li
+        a.nav(href="/about") //about
+        
+      // --end menu--
+  // --content--
+  block content
+  
+  // --footer--
+  footer
+    ul#footer
+      li 
+        p.copyright copyright © 2021 shawn kelley.
+        p.copyright all rights reserved.
+
+  #headspace
+
+script(src='/static/js/script.js')

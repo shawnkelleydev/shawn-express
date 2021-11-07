@@ -1,0 +1,19 @@
+extends layout.pug
+
+block content
+
+  ul#content
+    li#content-col-1
+      br
+      h1.title= name
+      ul#techs
+        each tech in techs 
+          li.tech= tech
+      p.data= desc
+      if tag 
+        p.data= tag
+      br
+      a.button(href= live target="_blank") live site 
+      a.button(href= github target="_blank") git hub
+    li#content-col-2
+      iframe(src= live title=`live preview of ${name}`)
