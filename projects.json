@@ -3,7 +3,7 @@
     {
       "id": 0,
       "project_name": "first light",
-      "description": "A tool for Christians to start their day, First Light includes a randomly-selected verse of the day, a task manager, a note-taking zone, a prayer-list, and a built-in ESV bible. It even shows you the current weather in your area if you provide permission to access your location.",
+      "description": "A tool for Christians to start their day, First Light includes a randomly-selected verse from a long curated list, a task manager, a note-taking zone, a prayer-list, and a built-in ESV bible. It even shows you the current weather in your area if you provide permission to access your location (see the live site via the link below).",
       "tag": "First Light.  Find your way for the day.",
       "technologies": ["HTML", "CSS", "JavaScript", "REST API"],
       "live_link": "https://shawnkelleyart.github.io/FirstLight/",
@@ -29,7 +29,8 @@
     {
       "id": 3,
       "project_name": "random quotes",
-      "description": "JavaScript-selected quotes over a JavaScript-selected background color, refreshing every 7 seconds. A project from Team Treehouse.",
+      "description": "This project features JavaScript-selected quotes over a JavaScript-selected background color, refreshing every 7 seconds.",
+      "tag": "HTML and CSS for this project were provided by Team Treehouse.",
       "technologies": ["HTML", "CSS", "JavaScript"],
       "live_link": "https://shawnkelleyart.github.io/techdegree-project-1/",
       "github_link": "https://github.com/shawnkelleyart/techdegree-project-1"
@@ -37,7 +38,8 @@
     {
       "id": 4,
       "project_name": "student list pagination",
-      "description": "Population, pagination, and search of a list of students.  A project from Team Treehouse.",
+      "description": "This project demonstrates population, pagination, and search of a list of 42 students.",
+      "tag": "HTML and CSS for this project were provided by Team Treehouse.",
       "technologies": ["HTML", "CSS", "JavaScript"],
       "live_link": "https://shawnkelleyart.github.io/techdegree-project-2/",
       "github_link": "https://github.com/shawnkelleyart/techdegree-project-2"
@@ -45,7 +47,8 @@
     {
       "id": 5,
       "project_name": "responsive form validation",
-      "description": "This form uses regular expressions to validate user input live.  It also prevents users from registering for conflicting events. A project from Team Treehouse.",
+      "description": "This project demonstrates live form validation using regular expressions.  It also responsively prevents schedule conflicts.",
+      "tag": "HTML and CSS for this project were provided by Team Treehouse.",
       "technologies": ["RegEx", "HTML", "CSS", "JavaScript"],
       "live_link": "https://shawnkelleyart.github.io/techdegree-project-3/",
       "github_link": "https://github.com/shawnkelleyart/techdegree-project-3"
@@ -53,16 +56,17 @@
     {
       "id": 6,
       "project_name": "OOP game",
-      "description": "A responsive phrase-hunting game with keyboard functionality.  Created with object-oriened programming in JavaScript. A project from Team Treehouse.",
-      "tag": "Phrase Hunter's css was provided by Team Treehouse and not designed to be mobile-responsive, so a wider-than-phone screen is advised."
+      "description": "An OOP project in the form of a responsive phrase-hunting game with keyboard functionality.",
+      "tag": "Phrase Hunter's css was provided by Team Treehouse and not designed to be mobile-responsive, so a wider-than-phone screen is recommended.",
       "technologies": ["HTML", "CSS", "JavaScript"],
       "live_link": "https://shawnkelleyart.github.io/techdegree-project-4/",
       "github_link": "https://github.com/shawnkelleyart/techdegree-project-4"
     },
     {
       "id": 7,
-      "project_name": "api employee directory",
-      "description": "An API project with a gallery, search functionality, modals, and modal navigation. A project from Team Treehouse.",
+      "project_name": "API employee directory",
+      "description": "An API project with a gallery, search functionality, modals, and modal navigation.",
+      "tag": "HTML and CSS for this project were provided by Team Treehouse.",
       "technologies": ["HTML", "CSS", "JavaScript"],
       "live_link": "https://shawnkelleyart.github.io/techdegree-project-5/",
       "github_link": "https://github.com/shawnkelleyart/techdegree-project-5"
@@ -74,8 +78,10 @@
       "title": "urban suite",
       "instrumentation": "eett",
       "duration": "12",
-      "description": "lorem ipsum",
-      "video_link": "https://youtube.com/playlist?list=PL00ZKav_3htzX9Gj3mZIXVoHJda1q9h_5"
+      "description": "A 2010 finalist for the ITEA Harvey Phillips Award, Urban Suite was fun to write and has been performed and recorded around the world.  It was completed in 2008, released in 2009, and premiered by faculty at Eastman School of Music.",
+      "video_link": "https://youtube.com/playlist?list=PL00ZKav_3htzX9Gj3mZIXVoHJda1q9h_5",
+      "purchase_link": "https://www.cimarronmusic.com/urban-suite-8504",
+      "audio_link": "https://open.spotify.com/album/4L6mJLsd5JhO3VD7pNVJZf"
     }
   ]
 }

@@ -47,7 +47,8 @@ menu {
 #about li,
 #footer li,
 .button,
-body {
+body,
+footer {
   align-items: center;
 }
 
@@ -59,6 +60,7 @@ body {
 
 #footer {
   flex-direction: column-reverse;
+  max-width: 400px;
 }
 
 header {
@@ -76,9 +78,10 @@ header {
 }
 
 .logo,
-#footer,
+.copyright,
 .projects,
-.title {
+.title,
+.caps {
   text-transform: capitalize;
 }
 
@@ -203,11 +206,23 @@ a {
   font-size: xx-large;
 }
 
+.upper {
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 230px;
+}
+
 /*---------
 
     IDs
 
 ----------*/
+
+#ham {
+  cursor: pointer;
+}
 
 #wrapper {
   max-width: 1000px;
@@ -250,19 +265,20 @@ a {
 
 #family,
 #headshot {
-  border-radius: 20px;
   margin: 20px 0;
   width: 90vw;
-  box-shadow: 0 0 10px gray;
 }
 
 #family {
-  max-width: 600px;
+  max-width: 900px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px black;
 }
 
 #headshot {
   border-radius: 50%;
   max-width: 300px;
+  box-shadow: 0 0 20px gray;
 }
 
 #content,
@@ -299,14 +315,6 @@ a {
 ----------*/
 
 @media (min-width: 750px) {
-  body {
-    padding: 50px;
-  }
-
-  #wrapper {
-    box-shadow: 0 0 10px gray;
-  }
-
   header {
     position: static;
     grid-template-columns: 1fr 1fr;
@@ -355,7 +363,7 @@ a {
     grid-template-rows: auto auto;
     gap: 20px;
     padding: 20px;
-    min-height: 0;
+    min-height: calc(100vh - var(--footer-height) - 100px);
   }
 
   #about {
@@ -372,11 +380,19 @@ a {
     grid-row: 1/2;
   }
 
+  #content-col-1,
+  #content-col-2 {
+    padding: 0;
+    justify-content: flex-start;
+  }
+
+  #name {
+    margin-top: 70px;
+  }
+
   #content-col-1 {
     grid-column: 1/2;
     grid-row: 2/3;
-    height: auto;
-    padding: 0;
   }
 
   #skills {
@@ -394,8 +410,6 @@ a {
   #content-col-2 {
     grid-column: 2/3;
     grid-row: 2/3;
-    height: auto;
-    padding: 0;
   }
 
   .sum {
@@ -410,6 +424,36 @@ a {
   footer {
     padding: 50px 10px 10px 10px;
   }
+
+  .button:hover,
+  .projects h3:hover {
+    background-color: cyan;
+    color: black;
+  }
+
+  .nav {
+    width: auto;
+  }
+
+  .nav:hover,
+  .logo:hover,
+  #more:hover {
+    color: rgb(0, 224, 224);
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    padding: 50px;
+  }
+
+  #wrapper {
+    box-shadow: 0 0 10px gray;
+  }
+
+  #content {
+    min-height: calc(100vh - var(--footer-height) - 200px);
+  }
 }
 
 /*------------
@@ -417,3 +461,20 @@ a {
   DARK/LIGHT
 
 ------------*/
+
+@media (prefers-color-scheme: dark) {
+  *,
+  a,
+  iframe,
+  #family,
+  #wrapper,
+  #headshot {
+    background-color: rgb(47, 47, 47);
+    color: white;
+    box-shadow: none;
+  }
+
+  body {
+    background-color: black;
+  }
+}

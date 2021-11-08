@@ -15,8 +15,8 @@ head
   header
     // --logo--
     ul#logo-parent
-      a(href="/")
-        li
+      li
+        a(href="/").logo
           h2.logo // shawn kelley
     // ham
     ul#ham
@@ -27,7 +27,7 @@ head
     ul#menu
       // --dev--
       li#menu-dev.menu-li
-        a.nav(href="/projects") //projects
+        a.nav(href="/projects") //work
 
           
       // --ab--
@@ -41,7 +41,8 @@ head
   // --footer--
   footer
     ul#footer
-      li 
+      li
+        p.text Site created by Shawn Kelley with JavaScript, HTML, CSS, Node.js, Express, and Pug using VSC. 
         p.copyright copyright © 2021 shawn kelley.
         p.copyright all rights reserved.
 

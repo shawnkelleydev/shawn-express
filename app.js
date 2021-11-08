@@ -47,6 +47,8 @@ app.get("/music/:id", (req, res) => {
   res.locals.duration = project.duration;
   res.locals.description = project.description;
   res.locals.video = project.video_link;
+  res.locals.purchase = project.purchase_link;
+  res.locals.audio = project.audio_link;
   res.render("piece");
 });
 

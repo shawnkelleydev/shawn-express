@@ -7,7 +7,7 @@ block content
       h1.title dev
       ul 
         each project in projects
-          a(href=`/projects/${project.id}` class="projects")
+          a(href=`/projects/${project.id}`).projects
             li 
               h3 #{project.project_name}
 
