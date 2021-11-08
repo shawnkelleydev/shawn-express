@@ -213,6 +213,7 @@ a {
 
 .logo {
   width: 250px;
+  background: cyan;
 }
 
 .piece-img {
