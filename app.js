@@ -56,6 +56,8 @@ app.get("/music/:id", (req, res) => {
 
 //server
 
-app.listen(process.env.PORT, () => {
+const port = process.env.PORT || 80;
+
+app.listen(port, () => {
   console.log(`The application is running on localhost:${route}.`);
 });
