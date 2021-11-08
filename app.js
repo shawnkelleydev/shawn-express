@@ -55,7 +55,7 @@ app.get("/music/:id", (req, res) => {
 });
 
 //server
-const route = 3000;
-app.listen(route, () => {
+
+app.listen(process.env.PORT, () => {
   console.log(`The application is running on localhost:${route}.`);
 });
