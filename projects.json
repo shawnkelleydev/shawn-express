@@ -74,14 +74,76 @@
   ],
   "music": [
     {
-      "id": "0",
+      "id": 0,
       "title": "urban suite",
       "instrumentation": "eett",
-      "duration": "12",
+      "duration": "13",
       "description": "A 2010 finalist for the ITEA Harvey Phillips Award, Urban Suite was fun to write and has been performed and recorded around the world.  It was completed in 2008, released in 2009, and premiered by faculty at Eastman School of Music.",
       "video_link": "https://youtube.com/playlist?list=PL00ZKav_3htzX9Gj3mZIXVoHJda1q9h_5",
       "purchase_link": "https://www.cimarronmusic.com/urban-suite-8504",
       "audio_link": "https://open.spotify.com/album/4L6mJLsd5JhO3VD7pNVJZf"
+    },
+    {
+      "id": 1,
+      "title": "home suite home",
+      "instrumentation": "eett",
+      "duration": "10",
+      "description": "Completed in 2020 and released in 2021, Home Suite Home captures themes from daily life.",
+      "tag": "Available now from Cimarron Music Press.",
+      "img": "/static/img/hsh.jpg",
+      "purchase_link": "https://www.cimarronmusic.com/homesuitehome"
+    },
+    {
+      "id": 2,
+      "title": "an off day",
+      "instrumentation": "eett",
+      "duration": "6",
+      "description": "Completed in 2020 and released in 2021, An Off Day captures life as it so often is in a fun way.",
+      "tag": "Available now from Cimarron Music Press.",
+      "img": "/static/img/aod.png",
+      "purchase_link": "https://www.cimarronmusic.com/anoffday"
+    },
+    {
+      "id": 3,
+      "title": "the new school",
+      "instrumentation": "eett",
+      "description": "You're going.",
+      "tag": "Completed 2020. Coming soon from Cimarron Music Press."
+    },
+    {
+      "id": 4,
+      "title": "china suite no. 1",
+      "instrumentation": "eett",
+      "description": "For my 中国朋友 (Chinese friend).",
+      "tag": "Completed 2021. Coming soon from Cimarron Music Press."
+    },
+    {
+      "id": 5,
+      "title": "i see",
+      "instrumentation": "eett",
+      "description": "Twas blind, but now...",
+      "tag": "Completed 2021.  Coming soon from Cimarron Music Press."
+    },
+    {
+      "id": 6,
+      "title": "loud noises",
+      "instrumentation": "eett",
+      "description": "They're everywhere, after all.",
+      "tag": "Completed 2021. Coming soon from Cimarron Music Press."
+    },
+    {
+      "id": 7,
+      "title": "spring",
+      "instrumentation": "eett",
+      "description": "A perspective on a beautiful season.",
+      "tag": "Completed 2021. Coming soon from Cimarron Music Press."
+    },
+    {
+      "id": 8,
+      "title": "street songs",
+      "instrumentation": "eett",
+      "description": "for the wild, improvisation-loving tuba quartet.",
+      "tag": "Completed 2021. Coming soon from Cimarron Music Press."
     }
   ]
 }

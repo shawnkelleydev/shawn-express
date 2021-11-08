@@ -109,12 +109,15 @@ header {
   padding: 30px 10px;
 }
 
-.title {
+.title,
+.piece-img {
   margin: 20px 0;
 }
 
 iframe,
-.button {
+.button,
+.piece-img {
+  width: 95vw;
   max-width: 320px;
 }
 
@@ -163,7 +166,6 @@ iframe {
   border: 5px rgb(13, 13, 13) solid;
   border-radius: 30px;
   box-shadow: 0 0 10px gray;
-  width: 95vw;
   max-width: 290px;
   height: 80vh;
   max-height: 600px;
@@ -198,7 +200,6 @@ a {
   padding: 20px;
   color: white;
   background-color: black;
-  width: 95vw;
   margin-bottom: 5px;
 }
 
@@ -212,6 +213,9 @@ a {
 
 .logo {
   width: 230px;
+}
+
+.piece-img {
 }
 
 /*---------
@@ -319,7 +323,7 @@ a {
     position: static;
     grid-template-columns: 1fr 1fr;
     height: auto;
-    padding: 20px;
+    padding: 30px 50px;
     box-shadow: none;
   }
 
@@ -334,7 +338,6 @@ a {
     box-shadow: none;
     grid-column: 2/3;
     height: 100%;
-    padding-right: 50px;
   }
 
   .menu-li,
@@ -351,6 +354,27 @@ a {
     padding: 0;
     font-size: large;
     text-align: right;
+  }
+
+  .buttons {
+    flex-direction: row;
+    padding: 10px;
+  }
+
+  .buttons li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: auto;
+  }
+
+  .button {
+    width: 200px;
+    margin-right: 10px;
+  }
+
+  .pbtn {
+    width: 150px;
   }
 
   #ham {
@@ -423,6 +447,10 @@ a {
 
   footer {
     padding: 50px 10px 10px 10px;
+  }
+
+  #footer {
+    font-size: 0.8em;
   }
 
   .button:hover,

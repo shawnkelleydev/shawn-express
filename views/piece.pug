@@ -8,17 +8,25 @@ block content
       h1.title= title
       p.data instrumentation:#{" "}
         span.upper #{instrum} 
-      p.data duration: #{duration}
-      p.data= description
+      if duration
+        p.data duration: #{duration}
+      if description
+        p.data= description
       if tag 
         p.data= tag
       br
-      if purchase
-        a.button(href= purchase target="_blank") purchase 
-      if audio
-        a.button(href= audio target="_blank") listen
-      if video
-        a.button(href= video target="_blank") watch
+      ul.buttons
+        if purchase
+          li
+            a.button.pbtn(href= purchase target="_blank") purchase 
+        if audio
+          li
+            a.button.pbtn(href= audio target="_blank") listen
+        if video
+          li
+            a.button.pbtn(href= video target="_blank") watch
     li#content-col-2
       if video 
         iframe(width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL00ZKav_3htzX9Gj3mZIXVoHJda1q9h_5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+      else
+        img(src= img).piece-img

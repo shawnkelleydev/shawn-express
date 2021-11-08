@@ -41,14 +41,16 @@ app.get("/projects/:id", (req, res) => {
 
 app.get("/music/:id", (req, res) => {
   const { id } = req.params;
-  const project = data.music[id];
-  res.locals.title = project.title;
-  res.locals.instrum = project.instrumentation;
-  res.locals.duration = project.duration;
-  res.locals.description = project.description;
-  res.locals.video = project.video_link;
-  res.locals.purchase = project.purchase_link;
-  res.locals.audio = project.audio_link;
+  const piece = data.music[id];
+  res.locals.title = piece.title;
+  res.locals.instrum = piece.instrumentation;
+  res.locals.duration = piece.duration;
+  res.locals.description = piece.description;
+  res.locals.tag = piece.tag;
+  res.locals.video = piece.video_link;
+  res.locals.purchase = piece.purchase_link;
+  res.locals.audio = piece.audio_link;
+  res.locals.img = piece.img;
   res.render("piece");
 });
 
