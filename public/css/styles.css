@@ -63,11 +63,6 @@ footer {
   max-width: 400px;
 }
 
-footer,
-#footer {
-  height: var(--footer-height);
-}
-
 header {
   display: grid;
 }
@@ -394,7 +389,7 @@ a {
     grid-template-rows: auto auto;
     gap: 20px;
     padding: 20px;
-    min-height: calc(100vh - var(--footer-height) - 100px);
+    min-height: 80vh;
   }
 
   #about {
@@ -452,12 +447,9 @@ a {
     display: none;
   }
 
-  footer {
-    padding: 50px 10px 10px 10px;
-  }
-
   #footer {
     font-size: 0.8em;
+    padding-bottom: 20px;
   }
 
   .button:hover,
@@ -487,7 +479,7 @@ a {
   }
 
   #content {
-    min-height: calc(100vh - var(--footer-height) - 200px);
+    min-height: 75vh;
   }
 }
 
