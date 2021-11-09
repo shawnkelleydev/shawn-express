@@ -20,7 +20,7 @@ html {
 :root {
   font-family: "Sora", sans-serif;
   --ham-width: 80px;
-  --ham-thick: 7px;
+  --ham-thick: 3px;
   --footer-height: 200px;
   --header-height: 90px;
 }
@@ -61,6 +61,11 @@ footer {
 #footer {
   flex-direction: column-reverse;
   max-width: 400px;
+}
+
+footer,
+#footer {
+  height: var(--footer-height);
 }
 
 header {
@@ -224,10 +229,6 @@ a {
 
 ----------*/
 
-#ham {
-  cursor: pointer;
-}
-
 #wrapper {
   max-width: 1000px;
 }
@@ -246,10 +247,11 @@ a {
 
 #ham {
   grid-column: 2/3;
-  width: var(--ham-width);
+  cursor: pointer;
+  width: 100%;
   justify-self: center;
-  margin: 10px;
-  padding: 10px;
+  padding: 20px;
+  /* padding: 10px; */
 }
 
 #ham li {
@@ -260,7 +262,7 @@ a {
 }
 
 #ham li:nth-child(-n + 2) {
-  margin-bottom: var(--ham-thick);
+  margin-bottom: calc(var(--ham-thick) * 3);
 }
 
 #headspace {
@@ -509,5 +511,13 @@ a {
 
   body {
     background-color: black;
+  }
+
+  #ham li {
+    background-color: white;
+  }
+
+  header {
+    box-shadow: none;
   }
 }

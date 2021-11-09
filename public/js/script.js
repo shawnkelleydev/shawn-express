@@ -33,7 +33,7 @@ function right2000(element) {
 
 function hamE() {
   for (let i = 0; i < hamLI.length; i++) {
-    hamLI[i].style.background = "black";
+    hamLI[i].style.background = "";
     hamLI[i].style.transform = "";
     hamLI[i].style.top = "";
     hamLI[i].style.bottom = "";
@@ -42,8 +42,30 @@ function hamE() {
 
 function hamX() {
   hamLI[0].style.transform = "rotate(45deg)";
-  hamLI[0].style.top = "14px";
+  hamLI[0].style.top = "12px";
   hamLI[1].style.background = "transparent";
   hamLI[2].style.transform = "rotate(-45deg)";
-  hamLI[2].style.bottom = "14px";
+  hamLI[2].style.bottom = "12px";
 }
+
+/*------------------------------------------------*/
+
+let pos = 0;
+
+document.addEventListener("scroll", (e) => {
+  const newPos = window.scrollY;
+  const header = document.querySelector("header");
+  if (window.innerWidth < 750) {
+    //scroll down
+    if (newPos > pos) {
+      pos = newPos;
+      header.style.bottom = "-200px";
+      //scroll up
+    } else if (newPos < pos) {
+      pos = newPos;
+      header.style.bottom = "";
+    }
+  }
+});
+
+function checkY() {}
