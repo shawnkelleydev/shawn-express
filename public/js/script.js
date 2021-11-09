@@ -56,16 +56,18 @@ document.addEventListener("scroll", (e) => {
   const newPos = window.scrollY;
   const header = document.querySelector("header");
   if (window.innerWidth < 750) {
-    //scroll down
-    if (newPos > pos) {
-      pos = newPos;
-      header.style.bottom = "-200px";
-      //scroll up
-    } else if (newPos < pos || pos === 0) {
-      pos = newPos;
-      header.style.bottom = "";
-    }
+    setTimeout(checkY(newPos, header), 333);
   }
 });
 
-function checkY() {}
+function checkY(newPos, header) {
+  //scroll down
+  if (newPos > pos) {
+    pos = newPos;
+    header.style.bottom = "-200px";
+    //scroll up
+  } else if (newPos < pos || pos === 0) {
+    pos = newPos;
+    header.style.bottom = "";
+  }
+}
