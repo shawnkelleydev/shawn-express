@@ -61,7 +61,7 @@ document.addEventListener("scroll", (e) => {
       pos = newPos;
       header.style.bottom = "-200px";
       //scroll up
-    } else if (newPos < pos) {
+    } else if (newPos < pos || pos === 0) {
       pos = newPos;
       header.style.bottom = "";
     }
