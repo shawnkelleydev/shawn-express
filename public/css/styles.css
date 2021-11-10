@@ -181,6 +181,11 @@ a {
   color: black;
 }
 
+svg {
+  height: 30px;
+  width: 30px;
+}
+
 /*---------
 
   CLASSES
@@ -321,12 +326,6 @@ a {
 
 /*---------
 
-    HOV
-
-----------*/
-
-/*---------
-
   ≥IPAD
 
 ----------*/
@@ -356,7 +355,7 @@ a {
   #menu {
     position: static;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     box-shadow: none;
     grid-column: 2/3;
     z-index: 5;
@@ -369,7 +368,7 @@ a {
 
   .menu-li {
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
   }
 
   .nav {
@@ -499,7 +498,8 @@ a {
 
   .nav:hover,
   .logo:hover,
-  #more:hover {
+  #more:hover,
+  path:hover {
     color: var(--hover);
   }
 }
