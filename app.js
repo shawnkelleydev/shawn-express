@@ -54,6 +54,23 @@ app.get("/music/:id", (req, res) => {
   res.render("piece");
 });
 
+app.use((req, res, next) => {
+  const err = new Error();
+  err.status = 404;
+  next(err);
+});
+
+app.use((err, req, res, next) => {
+  res.locals.err = err;
+  if (err.status === 404) {
+    res.render("page-not-found");
+    console.log("404 - please try again.");
+  } else if (err.status === undefined) {
+    res.render("error");
+    console.log("Bad things just happened.  Please try again.");
+  }
+});
+
 //server
 
 const PORT = process.env.PORT || 3000;

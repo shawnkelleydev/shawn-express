@@ -23,6 +23,7 @@ html {
   --ham-thick: 3px;
   --footer-height: 200px;
   --header-height: 90px;
+  --hover: rgb(255, 128, 0);
 }
 
 /*---------
@@ -210,7 +211,18 @@ a {
   width: 250px;
 }
 
-.piece-img {
+.error {
+  min-height: 70vh;
+  justify-content: center;
+}
+
+.error h2,
+.error p {
+  text-align: center;
+}
+
+.error p {
+  margin-top: 50px;
 }
 
 /*---------
@@ -321,12 +333,20 @@ a {
 ----------*/
 
 @media (min-width: 750px) {
+  #wrapper {
+    min-height: 100vh;
+  }
   header {
     position: static;
     grid-template-columns: 1fr 1fr;
     height: auto;
     padding: 30px 50px;
     box-shadow: none;
+  }
+
+  .error {
+    min-height: 65vh;
+    justify-content: center;
   }
 
   #logo-parent {
@@ -390,7 +410,6 @@ a {
     grid-template-rows: auto;
     gap: 20px;
     padding: 20px;
-    min-height: 70vh;
   }
 
   #about {
@@ -471,8 +490,8 @@ a {
 
   .button:hover,
   .projects h3:hover {
-    background-color: cyan;
-    color: black;
+    background-color: var(--hover);
+    color: white;
   }
 
   .nav {
@@ -482,9 +501,15 @@ a {
   .nav:hover,
   .logo:hover,
   #more:hover {
-    color: rgb(0, 224, 224);
+    color: var(--hover);
   }
 }
+
+/*--------------
+
+  WIDE SCREENS
+
+--------------*/
 
 @media (min-width: 1000px) {
   body {
@@ -493,6 +518,7 @@ a {
 
   #wrapper {
     box-shadow: 0 0 10px gray;
+    min-height: 90vh;
   }
 
   #content {
@@ -518,7 +544,8 @@ a {
     box-shadow: none;
   }
 
-  body {
+  body,
+  html {
     background-color: black;
   }
 
@@ -528,5 +555,10 @@ a {
 
   header {
     box-shadow: none;
+  }
+
+  .button {
+    background-color: white;
+    color: black;
   }
 }

@@ -7,7 +7,7 @@
   "description": "express portfolio site",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "nodemon app.js"
   },
   "keywords": [
     "shawn",

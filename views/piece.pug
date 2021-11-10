@@ -3,7 +3,6 @@ extends layout.pug
 block content
   ul#content
     li#content-col-1
-      br
       h1.title= title
       p.data instrumentation:#{" "}
         span.upper #{instrum} 
@@ -27,5 +26,5 @@ block content
     li#content-col-2
       if video 
         iframe(width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL00ZKav_3htzX9Gj3mZIXVoHJda1q9h_5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-      else
+      else if img
         img(src= img).piece-img
