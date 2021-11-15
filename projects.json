@@ -12,11 +12,11 @@
     {
       "id": 1,
       "project_name": "tomorrow land",
-      "description": "Tomorrow Land is a simple budgeting tool the keeps everything in the middle of the screen to avoid scrolling.  It selects a random verse from a curated list to help give perspective, and it auto-sorts spending input into one of six categories.",
+      "description": "Tomorrow Land is a React app.  It's a simple budgeting tool that keeps everything in the middle of the screen to avoid scrolling.  It also sorts items alphabetically for easy reference.",
       "tag": "Tomorrow Land.  Shape tomorrow today.",
-      "technologies": ["HTML", "CSS", "JavaScript"],
-      "live_link": "https://shawnkelleyart.github.io/TomorrowLand/",
-      "github_link": "https://github.com/shawnkelleyart/TomorrowLand"
+      "technologies": ["React", "JSX", "JavaScript", "HTML", "CSS"],
+      "live_link": "https://tomorrowland-sk.herokuapp.com",
+      "github_link": "https://github.com/shawnkelleyart/tomorrowland-react"
     },
     {
       "id": 2,
