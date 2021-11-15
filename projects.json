@@ -5,7 +5,7 @@
       "project_name": "first light",
       "description": "A tool for Christians to start their day, First Light includes a randomly-selected verse from a long curated list, a task manager, a note-taking zone, a prayer-list, and a built-in ESV bible. It even shows you the current weather in your area if you provide permission to access your location (see the live site via the link below).",
       "tag": "First Light.  Find your way for the day.",
-      "technologies": ["HTML", "CSS", "JavaScript", "REST API"],
+      "technologies": ["HTML", "CSS", "JavaScript", "Fetch API"],
       "live_link": "https://shawnkelleyart.github.io/FirstLight/",
       "github_link": "https://github.com/shawnkelleyart/FirstLight"
     },
@@ -15,7 +15,7 @@
       "description": "Tomorrow Land is a React app.  It's a simple budgeting tool that keeps everything in the middle of the screen to avoid scrolling.  It also sorts items alphabetically for easy reference, and each item fully editable.",
       "tag": "Tomorrow Land.  Shape tomorrow today.",
       "technologies": ["React", "JSX", "JavaScript", "HTML", "CSS"],
-      "live_link": "https://tomorrowland-sk.herokuapp.com",
+      "live_link": "https://shawnkelleyart.github.io/tomorrowland-react/",
       "github_link": "https://github.com/shawnkelleyart/tomorrowland-react"
     },
     {
@@ -67,7 +67,7 @@
       "project_name": "API employee directory",
       "description": "An API project with a gallery, search functionality, modals, and modal navigation.",
       "tag": "HTML and CSS for this project were provided by Team Treehouse.",
-      "technologies": ["HTML", "CSS", "JavaScript", "REST API"],
+      "technologies": ["HTML", "CSS", "JavaScript", "Fetch API"],
       "live_link": "https://shawnkelleyart.github.io/techdegree-project-5/",
       "github_link": "https://github.com/shawnkelleyart/techdegree-project-5"
     }
