@@ -12,7 +12,7 @@
     {
       "id": 1,
       "project_name": "tomorrow land",
-      "description": "Tomorrow Land is a React app.  It's a simple budgeting tool that keeps everything in the middle of the screen to avoid scrolling.  It also sorts items alphabetically for easy reference.",
+      "description": "Tomorrow Land is a React app.  It's a simple budgeting tool that keeps everything in the middle of the screen to avoid scrolling.  It also sorts items alphabetically for easy reference, and each item fully editable.",
       "tag": "Tomorrow Land.  Shape tomorrow today.",
       "technologies": ["React", "JSX", "JavaScript", "HTML", "CSS"],
       "live_link": "https://tomorrowland-sk.herokuapp.com",
