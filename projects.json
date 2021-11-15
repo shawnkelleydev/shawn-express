@@ -67,7 +67,7 @@
       "project_name": "API employee directory",
       "description": "An API project with a gallery, search functionality, modals, and modal navigation.",
       "tag": "HTML and CSS for this project were provided by Team Treehouse.",
-      "technologies": ["HTML", "CSS", "JavaScript"],
+      "technologies": ["HTML", "CSS", "JavaScript", "REST API"],
       "live_link": "https://shawnkelleyart.github.io/techdegree-project-5/",
       "github_link": "https://github.com/shawnkelleyart/techdegree-project-5"
     }
